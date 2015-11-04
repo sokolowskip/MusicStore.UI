@@ -1,10 +1,8 @@
 (function(){
     'use strict';
-    angular.module('myApp.view2', ['ngRoute']);
-    
-    angular.module('myApp.view2')
-        .config(config)
-        .controller('View2Ctrl', View2Ctrl);
+    angular
+        .module('myApp.view2')
+        .config(config);
     
     config.$inject = ['$routeProvider'];
     
@@ -15,7 +13,4 @@
             controllerAs: 'view2'
         });
     }
-            
-    function View2Ctrl(){
-    }    
 })();

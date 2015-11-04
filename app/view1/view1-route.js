@@ -1,11 +1,8 @@
 (function(){
-    'use strict';
-    
-    angular.module('myApp.view1', ['ngRoute']);
-    
-    angular.module('myApp.view1')
-        .config(config)
-        .controller('View1Ctrl', View1Ctrl);
+    'use strict'; 
+    angular
+        .module('myApp.view1')
+        .config(config);
     
     config.$inject = ['$routeProvider'];
     
@@ -16,8 +13,4 @@
             controllerAs: 'view1'
         });
     }
-            
-    function View1Ctrl(){        
-    }    
 })();
-

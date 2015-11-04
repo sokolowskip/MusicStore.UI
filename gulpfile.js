@@ -10,7 +10,13 @@ gulp.task('default', function() {
  
 gulp.task('build-js', function() {
   return gulp
-    .src(['app/**/*.js', '!app/bower_components/**', '!app/**/*_test.js'])
+    .src([
+        'app/app.js',
+        'app/view1/zview1-module.js',
+        'app/view2/view2-module.js',
+        'app/**/*.js', 
+        '!app/bower_components/**', 
+        '!app/**/*_test.js'])
     .pipe(sourcemaps.init())
     .pipe(concat('app.js'))
       //only uglify if gulp is ran with '--type production'
