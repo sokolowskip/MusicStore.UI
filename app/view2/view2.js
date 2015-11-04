@@ -6,6 +6,8 @@
         .config(config)
         .controller('View2Ctrl', View2Ctrl);
     
+    config.$inject = ['$routeProvider'];
+    
     function config($routeProvider){
         $routeProvider.when('/view2', {
             templateUrl: 'view2/view2.html',
