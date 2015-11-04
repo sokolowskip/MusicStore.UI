@@ -1,9 +1,8 @@
 (function(){
     'use strict';
     
-    angular.module('myApp', [
+    angular.module('app', [
         'ngRoute',
-        'myApp.view1',
-        'myApp.view2'
+        'app.albums'
         ]);
 })();
