@@ -6,7 +6,7 @@
 	config.$inject = ['$routeProvider'];
 		
 	function config($routeProvider){
-		$routeProvider.when('/albums/:albumId', {
+		$routeProvider.when('/albums/:genreId', {
 			templateUrl: 'albums/albums.html',
 			controller: 'albumsController',
 			controllerAs: "albumsCtrl"
