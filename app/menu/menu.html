@@ -1,0 +1,46 @@
+<md-toolbar class="md-menu-toolbar">
+    <div layout="row">
+        <md-toolbar-filler layout-align="center center">
+            <md-icon md-svg-icon="call:chat"></md-icon>
+        </md-toolbar-filler>
+        <div>
+            <h2 class="md-toolbar-tools">Music Store</h2>
+            <md-menu-bar>
+                <md-menu >
+                    <button>Home</button>
+                    <md-content></md-content>
+                </md-menu>
+                <md-menu>
+                    <button ng-click="$mdOpenMenu()">Categories</button>
+                    <md-menu-content>
+                        <md-menu-item ng-repeat="category in menuCtrl.popularCategories">
+                            <md-button href="#/albums/{{category.id}}">{{category.name}}</md-button>
+                        </md-menu-item>
+                        <md-menu-divider></md-menu-divider>
+                        <md-menu-item >
+                            <md-button href="#/categories">More...</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+            </md-menu-bar>
+        </div>
+    </div>
+        
+    <!--<div class="md-toolbar-tools">
+        <h2>
+          Music Store
+        </h2>
+        <md-menu>
+            <md-button ng-click="$mdOpenMenu($event)">
+                Categories
+            </md-button>
+            <md-menu-content width="6">
+                <md-menu-item ng-repeat="category in menuCtrl.categories">
+                    <md-button ng-click="menuCtrl.selectCategory(category.id)">
+                        {{category.name}}
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+   </div>-->
+</md-toolbar>
