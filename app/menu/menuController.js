@@ -2,8 +2,10 @@
 	angular
 		.module('app')
 		.controller('menuController', menuController);
-		
-	function menuController(){
+	
+	menuController.$inject = ['$location'];	
+	
+	function menuController($location){
 		self = this;
 		
 		self.popularCategories = [
@@ -16,6 +18,10 @@
 			createCategory('rap','Rap'),
 			createCategory('latin','Latin')	
 		];
+		
+		self.goHome = function(){
+			$location.path('/home');
+		}
 		
 		function createCategory(id, name){
 			return {
