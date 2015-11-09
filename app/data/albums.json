@@ -1,0 +1,38 @@
+[
+	{
+		"category": "rock",
+		"imgSrc": "data/killem_all.jpg",
+		"name": "Kill 'Em All",
+		"description": "Kill 'Em All is the debut studio album by the American heavy metal band Metallica, released on July 25, 1983, by the independent label Megaforce Records. Kill 'Em All is regarded as a groundbreaking album for thrash metal because of its precise musicianship, which fuses New Wave of British Heavy Metal riffs with hardcore punk tempos. Its musical approach and lyrics were markedly different from rock's mainstream of the early Eighties and inspired a number of bands who followed in similar manner. The album did not enter the Billboard 200 until 1986, when it peaked at number 155, following Metallica's commercial success with its third studio album Master of Puppets; the 1988 Elektra reissue peaked at number 120. Kill 'Em All was critically praised at the time of its release and in retrospect, and was placed on a few publications' best album lists. It was certified 3× platinum by the Recording Industry Association of America (RIAA) in 1999 for shipping three million copies in the United States. The album generated two singles: 'Whiplash' and 'Jump in the Fire'."
+	},{
+		"category": "rock",
+		"imgSrc": "data/Metallica_-_Master_of_Puppets_cover.jpg",
+		"name": "Master of Puppets",
+		"description": "Master of Puppets is the third studio album by American heavy metal band Metallica, released on March 3, 1986 by Elektra Records. Recorded at the Sweet Silence Studios with producer Flemming Rasmussen, it was the first Metallica album released on a major label. Master of Puppets was the band's last album to feature bassist Cliff Burton, who died in a bus crash in Sweden during the album's promotional tour. The album peaked at number 29 on the Billboard 200 and became the first thrash metal album to be certified platinum. It was certified 6× platinum by the Recording Industry Association of America (RIAA) in 2003 for shipping six million copies in the United States. The album was eventually certified 6× platinum by Music Canada and gold by the British Phonographic Industry (BPI)."
+	},{
+		"category": "rock",
+		"imgSrc": "data/ten.jpg",
+		"name": "Ten",
+		"description": "Ten is the debut studio album by the American rock band Pearl Jam, released on August 27, 1991 through Epic Records. Following the disbanding of bassist Jeff Ament and guitarist Stone Gossard's previous group Mother Love Bone, the two recruited vocalist Eddie Vedder, guitarist Mike McCready, and drummer Dave Krusen to form Pearl Jam in 1990. Most of the songs began as instrumental jams, to which Vedder added lyrics about topics such as depression, homelessness, and abuse."
+	},{
+		"category": "pop",
+		"imgSrc": "data/_Baby_One_More_Time_(album).png",
+		"name": "...Baby One More Time",
+		"description": ".Baby One More Time is the debut studio album by American recording artist Britney Spears. It was released on January 12, 1999, by Jive Records. In June 1997, while Spears negotiated with manager Lou Pearlman to join female pop group Innosense, her mother asked family friend and entertainment lawyer Larry Rudolph for his opinion and submitted a tape of Spears singing over a Whitney Houston karaoke song. Rudolph decided to pitch her to record labels, sending them a demo tape with an unused song from Toni Braxton. Jive was interested and appointed the singer to work with producer Eric Foster White. After hearing the recorded material, Jive signed Spears to a multi-album deal."
+	},{
+		"category": "blues",
+		"name": "Blues Breakers",
+		"imgSrc": "data/bluesbreakers with Eric Clapton.jpg",
+		"description": "Blues Breakers is a blues LP recorded by John Mayall & the Bluesbreakers in 1966, the first studio album and the second overall credited to John Mayall, who teamed up for the first time in a studio release with ex-Yardbird Eric Clapton (their next and last time will be for six tracks of 1971's double LP Back to the Roots). It is also known as Beano because of its cover photograph showing Clapton reading The Beano,[6] a British children's comic. Clapton stated in his autobiography that he was reading Beano on the cover as he felt like being 'uncooperative' during the photo shoot.[2]"
+	},{
+		"category": "jazz",
+		"name": "A Love Supreme",
+		"imgSrc": "data/supreme.jpg",
+		"description": "A Love Supreme is a studio album recorded by John Coltrane's quartet in December 1964[2] and released by Impulse! Records in February 1965. It is generally considered to be Coltrane's greatest work, as it melded the hard bop sensibilities of his early career with the modal jazz and free jazz styles he adopted later."
+	},{
+		"category": "jazz",
+		"name": "The Black Saint",
+		"imgSrc": "data/sinner.jpg",
+		"description": "The Black Saint and the Sinner Lady is a studio album by American jazz musician Charles Mingus, released on Impulse! Records in 1963. The album consists of a single continuous composition—partially written as a ballet—divided into four tracks and six movements.[2]"
+	}
+]
