@@ -1,12 +1,16 @@
-(function(){
+(function(){			
+	
+	class AlbumsController{
+		constructor($routeParams, albumsService){
+			this._albums = albumsService.getByGenre($routeParams.genreId);
+		}
+		
+		get albums() { return this._albums;}
+	}
+	
+	AlbumsController.$inject = ['$routeParams', 'albumsService'];
+	
 	angular
 		.module('app.albums')
-		.controller('albumsController', albumsController);
-		
-	albumsController.$inject = ['$routeParams', 'albumsService'];
-		
-	function albumsController($routeParams, albumsService){
-		self = this;
-		self.albums = albumsService.getByGenre($routeParams.genreId);
-	}
+		.controller('albumsController', AlbumsController);
 })();
