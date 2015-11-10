@@ -6,7 +6,7 @@
 		
 		getByGenre(genre){
 			return this._$http
-				.get('../data/albums.json')
+				.get('data/albums.json')
 				.then(response => filterCategories(response.data));
 				
 			function filterCategories(albums){
@@ -15,7 +15,7 @@
 		}
 	}
 	
-	AlbumsService.$inject(['$http']);
+	AlbumsService.$inject = ['$http'];
 	
 	angular
 		.module("app.albums")
