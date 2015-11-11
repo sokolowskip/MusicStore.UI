@@ -7,8 +7,7 @@ module.exports = function(config){
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-route/angular-route.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/components/**/*.js',
-      'app/view*/**/*.js'
+      'transpiled/**/*.js'
     ],
 
     autoWatch : true,
@@ -19,15 +18,7 @@ module.exports = function(config){
 
     plugins : [
             'karma-chrome-launcher',
-            'karma-firefox-launcher',
-            'karma-jasmine',
-            'karma-junit-reporter'
-            ],
-
-    junitReporter : {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
-
+            'karma-jasmine'
+            ]
   });
 };

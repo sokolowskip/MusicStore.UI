@@ -6,5 +6,5 @@ tmp
 .DS_Store
 .idea
 dist/
-build/
+transpiled/
 .vscode/
