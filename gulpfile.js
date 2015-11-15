@@ -19,7 +19,7 @@ gulp.task('transpile', function(){
  
 gulp.task('concat', ['transpile'], function(){
     return gulp
-        .src(['!trasnpiled/**/*_test.js',
+        .src(['!transpiled/**/*_test.js',
               'transpiled/**/*-module.js',
               'transpiled/**/*.js'])
         .pipe(sourcemaps.init())
