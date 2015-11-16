@@ -10,6 +10,7 @@
 			this.title = "";
 			this.author = "";
 			this.description = "";
+			this.imageUrl = "";
 		}
 		
 		submit(){
@@ -17,7 +18,8 @@
 				category: this._genreId,
 				name : this.title,
 				author : this.author,
-				description : this.description
+				description : this.description,
+				imgSrc: this.imageUrl
 			};
 			
 			this._albumsService.addAlbum(album)

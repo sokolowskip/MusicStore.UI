@@ -1,24 +1,33 @@
 <md-content layout-padding>
-    <form name="albumForm" ng-submit="newAlbumCtrl.submit()" layout-wrap>
-        <md-input-container flex>
-            <label>Genre</label>
-            <input ng-model="newAlbumCtrl.genreId" disabled>
-        </md-input-container>
-        <md-input-container flex>
-            <label>Title</label>
-            <input ng-model="newAlbumCtrl.title" required md-maxlength="50">
-        </md-input-container>
-        <md-input-container flex>
-            <label>Author</label>
-            <input ng-model="newAlbumCtrl.author" required  md-maxlength="50">
-        </md-input-container>
-        <md-input-container flex>
-            <label>Description</label>
-            <textarea ng-model="newAlbumCtrl.description" required  md-maxlength="1500"></textarea>
-        </md-input-container>
-        <div flex="100">
-            <md-button type="button" ng-click="newAlbumCtrl.reset()">RESET</md-button>
-            <md-button class="md-primary" ng-disabled="albumForm.$invalid">SUBMIT</md-button>
+    <form name="albumForm" ng-submit="newAlbumCtrl.submit()" layout-wrap layout="row">
+        <div flex="50">
+            <md-input-container flex>
+                <label>Genre</label>
+                <input ng-model="newAlbumCtrl.genreId" disabled>
+            </md-input-container>
+            <md-input-container flex>
+                <label>Title</label>
+                <input ng-model="newAlbumCtrl.title" required md-maxlength="50">
+            </md-input-container>
+            <md-input-container flex>
+                <label>Author</label>
+                <input ng-model="newAlbumCtrl.author" required  md-maxlength="50">
+            </md-input-container>
+            <md-input-container flex>
+                <label>Description</label>
+                <textarea ng-model="newAlbumCtrl.description" required  md-maxlength="1500"></textarea>
+            </md-input-container>
+            <div flex="100">
+                <md-button type="button" ng-click="newAlbumCtrl.reset()">RESET</md-button>
+                <md-button class="md-primary" ng-disabled="albumForm.$invalid">SUBMIT</md-button>
+            </div>
         </div>
+        <div flex="50">
+            <md-input-container flex>
+                <label>Image Url</label>
+                <input ng-model="newAlbumCtrl.imageUrl" >
+            </md-input-container>
+            <img class="newAlbumImage" ng-src="{{newAlbumCtrl.imageUrl}}">
+        <div>
     </form>
 </md-content>

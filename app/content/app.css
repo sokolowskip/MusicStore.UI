@@ -14,3 +14,13 @@ form {
   padding: 0 20px;
   border-radius: 4px;
 }
+
+form md-input-container{
+	margin : 0px 10px;
+}
+
+.newAlbumImage{
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+}
