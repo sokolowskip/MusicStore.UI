@@ -7,3 +7,10 @@
 	width: 300px;
 	height: 300px;
 }
+
+form {
+  margin: 10px auto;
+  border: 1px solid #eee;
+  padding: 0 20px;
+  border-radius: 4px;
+}

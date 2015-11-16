@@ -18,18 +18,28 @@ describe("Albums service", () => {
 				return deferred.promise;
 			}
 		};
-		albumsController = $controller('albumsController', {albumsService: albumsService});
+		var routeParams = {
+			genreId: "rock"
+		};
+		albumsController = $controller('albumsController', {
+			albumsService: albumsService,
+			$routeParams: routeParams
+			});
 	}));
-	
-	function getAlbums(genre){
-		if(genre == "rock") return  [{},{}];
-		if(genre == "blues") return [{}];
-		else return [];
-	}
-	
+		
 	it("returns albums by category", () => {
 		deferred.resolve(getAlbums("rock"));	
 		$rootScope.$digest();
 		expect(albumsController.albums.length).toBe(2);
+		
+		function getAlbums(genre){
+			if(genre == "rock") return  [{},{}];
+			if(genre == "blues") return [{}];
+			else return [];
+		}
+	});
+	
+	it("returns its genre id", () => {
+		expect(albumsController.genreId).toBe("rock");
 	});
 });

@@ -14,6 +14,15 @@
 				.then(albums => albums.filter(a => a.category == genre))
 		}
 		
+		addAlbum(album){
+			return this._getAlbums()
+				.then(albums => {
+					albums.push(album);
+					localStorage[albumsKey] = JSON.stringify(albums);
+					return true;
+				})
+		}
+		
 		_getAlbums(){
 			let albums = localStorage[albumsKey];
 			if(albums){

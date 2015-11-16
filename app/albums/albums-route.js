@@ -10,6 +10,10 @@
 			templateUrl: 'albums/albums.html',
 			controller: 'albumsController',
 			controllerAs: "albumsCtrl"
+		}).when('/new-album/:genreId',{
+			templateUrl: 'albums/new-album.html',
+			controller: 'newAlbumController',
+			controllerAs: "newAlbumCtrl"
 		});
 	};
 })();
